@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebab Expressen</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: url('bakgrund.jpg');
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
+
+h2 {
+    border-bottom: 2px solid orange;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.price {
+    color: orange;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: orange;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Kebab Expressen</h1>
+<p>Torggatan 31 • Borås</p>
+</header>
+
+<div class="container">
+
+<h2>📸 Våra rätter</h2>
+<div class="gallery">
+<img src="mat1.jpg">
+<img src="mat2.jpg">
+<img src="mat3.jpg">
+<img src="mat4.jpg">
+</div>
+
+<h2>🥙 Meny</h2>
+
+<div class="menu-item"><span>Falafel med pommes</span><span class="price">129 kr</span></div>
+<div class="menu-item"><span>Kebab med ris</span><span class="price">129 kr</span></div>
+<div class="menu-item"><span>Kycklingrulle</span><span class="price">129 kr</span></div>
+<div class="menu-item"><span>Mahdis special</span><span class="price">149 kr</span></div>
+
+<h2>📍 Hitta oss</h2>
+
+<iframe 
+width="100%" 
+height="300" 
+style="border:0" 
+loading="lazy"
+src="https://maps.google.com/maps?q=Torggatan%2031%20Bor%C3%A5s&output=embed">
+</iframe>
+
+</div>
+
+<div class="contact">
+<h2>Kontakt</h2>
+<p>📞 076-005 67 31</p>
+
+<a href="tel:0760056731" class="btn">📞 Ring nu</a>
+<a href="https://maps.google.com/?q=Torggatan+31+Borås" class="btn">📍 Öppna karta</a>
+
+</div>
+
+</body>
+</html>
